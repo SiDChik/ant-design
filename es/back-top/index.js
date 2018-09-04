@@ -112,8 +112,7 @@ var BackTop = function (_React$Component) {
                 { className: prefixCls + '-content' },
                 React.createElement(Icon, { className: prefixCls + '-icon', type: 'to-top' })
             );
-            // fix https://fb.me/react-unknown-prop
-            var divProps = omit(this.props, ['prefixCls', 'className', 'children', 'visibilityHeight']);
+                        var divProps = omit(this.props, ['prefixCls', 'className', 'children', 'visibilityHeight']);
             var backTopBtn = this.state.visible ? React.createElement(
                 'div',
                 _extends({}, divProps, { className: classString, onClick: this.scrollToTop }),

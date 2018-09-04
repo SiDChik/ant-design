@@ -14,8 +14,8 @@ var __rest = this && this.__rest || function (s, e) {
 };
 import React from 'react';
 import RcSlider from 'rc-slider/es/Slider';
-import RcRange from 'rc-slider/es/Range';
-import RcHandle from 'rc-slider/es/Handle';
+import RcRange from 'rc-slider/lib/Range';
+import RcHandle from 'rc-slider/lib/Handle';
 import Tooltip from '../tooltip';
 
 var Slider = function (_React$Component) {

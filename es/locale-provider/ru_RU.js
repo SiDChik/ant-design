@@ -1,6 +1,4 @@
-/**
- * Created by Andrey Gayvoronsky on 13/04/16.
- */
+
 import moment from 'moment';
 import 'moment/locale/ru';
 moment.locale('ru');

@@ -1,7 +1,6 @@
 import CalendarLocale from 'rc-calendar/es/locale/et_EE';
 import TimePickerLocale from '../../time-picker/locale/et_EE';
 import assign from 'object-assign';
-// 统一合并为完整的 Locale
 var locale = {
     lang: assign({
         placeholder: 'Vali kuupäev',
@@ -9,6 +8,4 @@ var locale = {
     }, CalendarLocale),
     timePickerLocale: assign({}, TimePickerLocale)
 };
-// All settings at:
-// https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json
 export default locale;

@@ -98,14 +98,12 @@ var Calendar = function (_React$Component) {
         _this.onSelect = function (value) {
             _this.setValue(value, 'select');
         };
-        // Make sure that moment locale had be set correctly.
-        getComponentLocale(props, context, 'Calendar', function () {
+                getComponentLocale(props, context, 'Calendar', function () {
             return require('./locale/zh_CN');
         });
         var value = props.value || props.defaultValue || moment();
         if (!moment.isMoment(value)) {
-            throw new Error('The value/defaultValue of Calendar must be a moment object after `antd@2.0`, ' + 'see: http://u.ant.design/calendar-value');
-        }
+            throw new Error('The value/defaultValue of Calendar must be a moment object after `antd@2.0`, ' + 'see: http:        }
         _this.state = {
             value: value,
             mode: props.mode

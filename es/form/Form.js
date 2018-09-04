@@ -8,7 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import createDOMForm from 'rc-form/es/createDOMForm';
-import PureRenderMixin from 'rc-util/es/PureRenderMixin';
+import PureRenderMixin from 'rc-util/lib/PureRenderMixin';
 import omit from 'omit.js';
 import assign from 'object-assign';
 import createReactClass from 'create-react-class';
@@ -100,7 +100,7 @@ Form.create = function (options) {
     }, options, {
         fieldMetaProp: FIELD_META_PROP
     }));
-    /* eslint-disable react/prefer-es6-class */
+    
     return function (Component) {
         return formWrapper(createReactClass({
             propTypes: {
@@ -118,8 +118,7 @@ Form.create = function (options) {
                 this.__getFieldProps = this.props.form.getFieldProps;
             },
             deprecatedGetFieldProps: function deprecatedGetFieldProps(name, option) {
-                warning(false, '`getFieldProps` is not recommended, please use `getFieldDecorator` instead, ' + 'see: http://u.ant.design/get-field-decorator');
-                return this.__getFieldProps(name, option);
+                warning(false, '`getFieldProps` is not recommended, please use `getFieldDecorator` instead, ' + 'see: http:                return this.__getFieldProps(name, option);
             },
             render: function render() {
                 this.props.form.getFieldProps = this.deprecatedGetFieldProps;

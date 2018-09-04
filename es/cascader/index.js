@@ -90,8 +90,7 @@ var Cascader = function (_React$Component) {
             var _this$state = _this.state,
                 inputFocused = _this$state.inputFocused,
                 popupVisible = _this$state.popupVisible;
-            // Prevent `Trigger` behaviour.
-
+            
             if (inputFocused || popupVisible) {
                 e.stopPropagation();
                 e.nativeEvent.stopImmediatePropagation();
@@ -250,15 +249,12 @@ var Cascader = function (_React$Component) {
             var clearIcon = allowClear && !disabled && value.length > 0 || state.inputValue ? React.createElement(Icon, { type: 'cross-circle', className: prefixCls + '-picker-clear', onClick: this.clearSelection }) : null;
             var arrowCls = classNames((_classNames2 = {}, _defineProperty(_classNames2, prefixCls + '-picker-arrow', true), _defineProperty(_classNames2, prefixCls + '-picker-arrow-expand', state.popupVisible), _classNames2));
             var pickerCls = classNames(className, (_classNames3 = {}, _defineProperty(_classNames3, prefixCls + '-picker', true), _defineProperty(_classNames3, prefixCls + '-picker-with-value', state.inputValue), _defineProperty(_classNames3, prefixCls + '-picker-disabled', disabled), _classNames3));
-            // Fix bug of https://github.com/facebook/react/pull/5004
-            // and https://fb.me/react-unknown-prop
-            var inputProps = omit(otherProps, ['onChange', 'options', 'popupPlacement', 'transitionName', 'displayRender', 'onPopupVisibleChange', 'changeOnSelect', 'expandTrigger', 'popupVisible', 'getPopupContainer', 'loadData', 'popupClassName', 'filterOption', 'renderFilteredOption', 'sortFilteredOption', 'notFoundContent']);
+                                    var inputProps = omit(otherProps, ['onChange', 'options', 'popupPlacement', 'transitionName', 'displayRender', 'onPopupVisibleChange', 'changeOnSelect', 'expandTrigger', 'popupVisible', 'getPopupContainer', 'loadData', 'popupClassName', 'filterOption', 'renderFilteredOption', 'sortFilteredOption', 'notFoundContent']);
             var options = props.options;
             if (state.inputValue) {
                 options = this.generateFilteredOptions(prefixCls);
             }
-            // Dropdown menu should keep previous status until it is fully closed.
-            if (!state.popupVisible) {
+                        if (!state.popupVisible) {
                 options = this.cachedOptions;
             } else {
                 this.cachedOptions = options;
@@ -266,10 +262,8 @@ var Cascader = function (_React$Component) {
             var dropdownMenuColumnStyle = {};
             var isNotFound = (options || []).length === 1 && options[0].value === 'ANT_CASCADER_NOT_FOUND';
             if (isNotFound) {
-                dropdownMenuColumnStyle.height = 'auto'; // Height of one row.
-            }
-            // The default value of `matchInputWidth` is `true`
-            var resultListMatchInputWidth = showSearch.matchInputWidth === false ? false : true;
+                dropdownMenuColumnStyle.height = 'auto';             }
+                        var resultListMatchInputWidth = showSearch.matchInputWidth === false ? false : true;
             if (resultListMatchInputWidth && state.inputValue && this.refs.input) {
                 dropdownMenuColumnStyle.width = this.refs.input.refs.input.offsetWidth;
             }

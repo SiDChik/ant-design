@@ -1,4 +1,4 @@
-import { placements } from 'rc-tooltip/es/placements';
+import { placements } from 'rc-tooltip/lib/placements';
 var autoAdjustOverflow = {
     adjustX: 1,
     adjustY: 1

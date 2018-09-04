@@ -39,9 +39,7 @@ var TransferList = function (_React$Component) {
             if (!e.target.value) {
                 return;
             }
-            // Manually trigger scroll event for lazy search bug
-            // https://github.com/ant-design/ant-design/issues/5631
-            _this.triggerScrollTimer = setTimeout(function () {
+                                    _this.triggerScrollTimer = setTimeout(function () {
                 var listNode = findDOMNode(_this).querySelectorAll('.ant-transfer-list-content')[0];
                 if (listNode) {
                     triggerEvent(listNode, 'scroll');
@@ -141,8 +139,7 @@ var TransferList = function (_React$Component) {
                 itemUnit = _props.itemUnit,
                 itemsUnit = _props.itemsUnit,
                 onScroll = _props.onScroll;
-            // Custom Layout
-
+            
             var footerDom = footer(assign({}, this.props));
             var bodyDom = body(assign({}, this.props));
             var listCls = classNames(prefixCls, _defineProperty({}, prefixCls + '-with-footer', !!footerDom));
@@ -156,11 +153,9 @@ var TransferList = function (_React$Component) {
                 if (filter && filter.trim() && !_this3.matchFilter(renderedText, item)) {
                     return null;
                 }
-                // all show items
-                totalDataSource.push(item);
+                                totalDataSource.push(item);
                 if (!item.disabled) {
-                    // response to checkAll items
-                    filteredDataSource.push(item);
+                                        filteredDataSource.push(item);
                 }
                 var checked = checkedKeys.indexOf(item.key) >= 0;
                 return React.createElement(Item, { key: item.key, item: item, lazy: lazy, renderedText: renderedText, renderedEl: renderedEl, checked: checked, prefixCls: prefixCls, onClick: _this3.handleSelect });

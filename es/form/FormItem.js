@@ -214,10 +214,8 @@ var FormItem = function (_React$Component) {
             var labelColClassName = classNames(prefixCls + '-item-label', labelCol && labelCol.className);
             var labelClassName = classNames(_defineProperty({}, prefixCls + '-item-required', required));
             var labelChildren = label;
-            // Keep label is original where there should have no colon
-            var haveColon = colon && !context.vertical;
-            // Remove duplicated user input colon
-            if (haveColon && typeof label === 'string' && label.trim() !== '') {
+                        var haveColon = colon && !context.vertical;
+                        if (haveColon && typeof label === 'string' && label.trim() !== '') {
                 labelChildren = label.replace(/[：|:]\s*$/, '');
             }
             return label ? React.createElement(

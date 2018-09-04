@@ -16,7 +16,7 @@ var __decorate = this && this.__decorate || function (decorators, target, key, d
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import addEventListener from "rc-util/es/Dom/addEventListener";
+import addEventListener from 'rc-util/es/Dom/addEventListener';
 import classNames from 'classnames';
 import shallowequal from 'shallowequal';
 import omit from 'omit.js';
@@ -106,8 +106,7 @@ var Affix = function (_React$Component) {
                 target = _props2$target === undefined ? getDefaultTarget : _props2$target;
 
             var targetNode = target();
-            // Backwards support
-            offsetTop = offsetTop || offset;
+                        offsetTop = offsetTop || offset;
             var scrollTop = getScroll(targetNode, true);
             var affixNode = ReactDOM.findDOMNode(this);
             var elemOffset = getOffset(affixNode, targetNode);
@@ -119,8 +118,7 @@ var Affix = function (_React$Component) {
                 top: false,
                 bottom: false
             };
-            // Default to `offsetTop=0`.
-            if (typeof offsetTop !== 'number' && typeof offsetBottom !== 'number') {
+                        if (typeof offsetTop !== 'number' && typeof offsetBottom !== 'number') {
                 offsetMode.top = true;
                 offsetTop = 0;
             } else {
@@ -130,8 +128,7 @@ var Affix = function (_React$Component) {
             var targetRect = getTargetRect(targetNode);
             var targetInnerHeight = targetNode.innerHeight || targetNode.clientHeight;
             if (scrollTop > elemOffset.top - offsetTop && offsetMode.top) {
-                // Fixed Top
-                var width = elemOffset.width;
+                                var width = elemOffset.width;
                 this.setAffixStyle(e, {
                     position: 'fixed',
                     top: targetRect.top + offsetTop,
@@ -143,8 +140,7 @@ var Affix = function (_React$Component) {
                     height: affixNode.offsetHeight
                 });
             } else if (scrollTop < elemOffset.top + elemSize.height + offsetBottom - targetInnerHeight && offsetMode.bottom) {
-                // Fixed Bottom
-                var targetBottomOffet = targetNode === window ? 0 : window.innerHeight - targetRect.bottom;
+                                var targetBottomOffet = targetNode === window ? 0 : window.innerHeight - targetRect.bottom;
                 var _width = elemOffset.width;
                 this.setAffixStyle(e, {
                     position: 'fixed',
@@ -173,8 +169,7 @@ var Affix = function (_React$Component) {
             var _this3 = this;
 
             var target = this.props.target || getDefaultTarget;
-            // Wait for parent component ref has its value
-            this.timeout = setTimeout(function () {
+                        this.timeout = setTimeout(function () {
                 _this3.setTargetEventListeners(target);
             });
         }
@@ -184,8 +179,7 @@ var Affix = function (_React$Component) {
             if (this.props.target !== nextProps.target) {
                 this.clearScrollEventListeners();
                 this.setTargetEventListeners(nextProps.target);
-                // Mock Event object.
-                this.updatePosition({});
+                                this.updatePosition({});
             }
         }
     }, {

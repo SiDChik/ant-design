@@ -40,16 +40,12 @@ var Modal = function (_React$Component) {
             if (mousePositionEventBinded) {
                 return;
             }
-            // 只有点击事件支持从鼠标位置动画展开
-            addEventListener(document.documentElement, 'click', function (e) {
+                        addEventListener(document.documentElement, 'click', function (e) {
                 mousePosition = {
                     x: e.pageX,
                     y: e.pageY
                 };
-                // 100ms 内发生过点击事件，则从点击位置动画展示
-                // 否则直接 zoom 展示
-                // 这样可以兼容非点击方式展开
-                setTimeout(function () {
+                                                                setTimeout(function () {
                     return mousePosition = null;
                 }, 100);
             });

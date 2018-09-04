@@ -9,7 +9,7 @@ import React from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import RangeCalendar from 'rc-calendar/es/RangeCalendar';
-import RcDatePicker from 'rc-calendar/es/Picker';
+import RcDatePicker from 'rc-calendar/lib/Picker';
 import classNames from 'classnames';
 import assign from 'object-assign';
 import Icon from '../icon';
@@ -19,8 +19,7 @@ function getShowDateFromValue(value) {
     var _value = _slicedToArray(value, 2),
         start = _value[0],
         end = _value[1];
-    // value could be an empty array, then we should not reset showDate
-
+    
 
     if (!start && !end) {
         return;
@@ -107,8 +106,7 @@ var RangePicker = function (_React$Component) {
         };
         var value = props.value || props.defaultValue || [];
         if (value[0] && !moment.isMoment(value[0]) || value[1] && !moment.isMoment(value[1])) {
-            throw new Error('The value/defaultValue of RangePicker must be a moment object array after `antd@2.0`, ' + 'see: http://u.ant.design/date-picker-value');
-        }
+            throw new Error('The value/defaultValue of RangePicker must be a moment object array after `antd@2.0`, ' + 'see: http:        }
         _this.state = {
             value: value,
             open: props.open,
@@ -175,8 +173,7 @@ var RangePicker = function (_React$Component) {
 
             warning(!('onOK' in props), 'It should be `RangePicker[onOk]`, instead of `onOK`!');
             var calendarClassName = classNames((_classNames = {}, _defineProperty(_classNames, prefixCls + '-time', showTime), _defineProperty(_classNames, prefixCls + '-range-with-ranges', ranges), _classNames));
-            // 需要选择时间时，点击 ok 时才触发 onChange
-            var pickerChangeHandler = {
+                        var pickerChangeHandler = {
                 onChange: this.handleChange
             };
             var calendarHandler = {
@@ -192,8 +189,7 @@ var RangePicker = function (_React$Component) {
             var startPlaceholder = 'placeholder' in props ? props.placeholder[0] : locale.lang.rangePlaceholder[0];
             var endPlaceholder = 'placeholder' in props ? props.placeholder[1] : locale.lang.rangePlaceholder[1];
             var calendar = React.createElement(RangeCalendar, _extends({}, calendarHandler, { format: format, prefixCls: prefixCls, className: calendarClassName, renderFooter: this.renderFooter, timePicker: props.timePicker, disabledDate: disabledDate, disabledTime: disabledTime, dateInputPlaceholder: [startPlaceholder, endPlaceholder], locale: locale.lang, onOk: onOk, value: showDate || pickerValueAdapter(props.defaultPickerValue) || pickerValueAdapter(moment()), onValueChange: this.handleShowDateChange, hoverValue: hoverValue, onHoverChange: this.handleHoverChange, showToday: showToday }));
-            // default width for showTime
-            var pickerStyle = {};
+                        var pickerStyle = {};
             if (props.showTime) {
                 pickerStyle.width = style && style.width || 300;
             }

@@ -6,7 +6,7 @@ import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructo
 import _inherits from 'babel-runtime/helpers/inherits';
 import React from 'react';
 import moment from 'moment';
-import RcTimePicker from 'rc-time-picker/es/TimePicker';
+import RcTimePicker from 'rc-time-picker/lib/TimePicker';
 import classNames from 'classnames';
 import assign from 'object-assign';
 import injectLocale from '../locale-provider/injectLocale';

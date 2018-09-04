@@ -9,7 +9,7 @@ import React, { cloneElement } from 'react';
 import { findDOMNode } from 'react-dom';
 import RcTabs, { TabPane } from 'rc-tabs';
 import ScrollableInkTabBar from 'rc-tabs/es/ScrollableInkTabBar';
-import TabContent from 'rc-tabs/es/TabContent';
+import TabContent from 'rc-tabs/lib/TabContent';
 import classNames from 'classnames';
 import Icon from '../icon';
 import warning from '../_util/warning';
@@ -88,16 +88,14 @@ var Tabs = function (_React$Component) {
             },
                 inkBarAnimated = _ref.inkBarAnimated,
                 tabPaneAnimated = _ref.tabPaneAnimated;
-            // card tabs should not have animation
-
+            
 
             if (type !== 'line') {
                 tabPaneAnimated = 'animated' in this.props ? tabPaneAnimated : false;
             }
             warning(!(type.indexOf('card') >= 0 && size === 'small'), 'Tabs[type=card|editable-card] doesn\'t have small size, it\'s by designed.');
             var cls = classNames(className, (_classNames = {}, _defineProperty(_classNames, prefixCls + '-mini', size === 'small' || size === 'mini'), _defineProperty(_classNames, prefixCls + '-vertical', tabPosition === 'left' || tabPosition === 'right'), _defineProperty(_classNames, prefixCls + '-card', type.indexOf('card') >= 0), _defineProperty(_classNames, prefixCls + '-' + type, true), _defineProperty(_classNames, prefixCls + '-no-animation', !animated), _classNames));
-            // only card type tabs can be added and closed
-            var childrenWithClose = void 0;
+                        var childrenWithClose = void 0;
             if (type === 'editable-card') {
                 childrenWithClose = [];
                 React.Children.forEach(children, function (child, index) {
@@ -116,8 +114,7 @@ var Tabs = function (_React$Component) {
                         key: child.key || index
                     }));
                 });
-                // Add new tab handler
-                if (!hideAdd) {
+                                if (!hideAdd) {
                     tabBarExtraContent = React.createElement(
                         'span',
                         null,

@@ -6,7 +6,7 @@ import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructo
 import _inherits from 'babel-runtime/helpers/inherits';
 import React from 'react';
 import PropTypes from 'prop-types';
-import TimePickerPanel from 'rc-time-picker/es/Panel';
+import TimePickerPanel from 'rc-time-picker/lib/Panel';
 import classNames from 'classnames';
 import warning from '../_util/warning';
 import { getComponentLocale } from '../_util/getLocale';

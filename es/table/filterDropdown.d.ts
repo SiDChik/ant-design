@@ -5,7 +5,7 @@ export interface FilterMenuProps {
     selectedKeys: string[];
     column: {
         filterMultiple?: boolean;
-        filterDropdown?: any;
+        filterDropdown?: Function;
         filters?: {
             text: string;
             value: string;
