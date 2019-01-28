@@ -246,6 +246,13 @@ export default class Table<T> extends React.Component<TableProps<T>, any> {
           sortState.sortOrder !== this.state.sortOrder) {
         this.setState(sortState);
       }
+    } else {
+      if (!!this.state.sortColumn) {
+        this.setState({
+          sortColumn: null,
+          sortOrder: '',
+        });
+      }
     }
 
     const filteredValueColumns = this.getFilteredValueColumns(this.columns);
