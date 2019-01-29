@@ -8,7 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import MonthCalendar from 'rc-calendar/es/MonthCalendar';
-import RcDatePicker from 'rc-calendar/lib/Picker';
+import RcDatePicker from 'rc-calendar/es/Picker';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import assign from 'object-assign';
@@ -38,7 +38,8 @@ export default function createPicker(TheCalendar) {
             };
             var value = props.value || props.defaultValue;
             if (value && !moment.isMoment(value)) {
-                throw new Error('The value/defaultValue of DatePicker or MonthPicker must be ' + 'a moment object after `antd@2.0`, see: http:            }
+                throw new Error('The value/defaultValue of DatePicker or MonthPicker must be ' + 'a moment object after `antd@2.0`, see: http://u.ant.design/date-picker-value');
+            }
             _this.state = {
                 value: value
             };
@@ -72,7 +73,8 @@ export default function createPicker(TheCalendar) {
                 var calendarHandler = {};
                 if (props.showTime) {
                     calendarHandler = {
-                                                onSelect: this.handleChange
+                        // fix https://github.com/ant-design/ant-design/issues/1902
+                        onSelect: this.handleChange
                     };
                 } else {
                     pickerChangeHandler = {
@@ -81,7 +83,8 @@ export default function createPicker(TheCalendar) {
                 }
                 warning(!('onOK' in props), 'It should be `DatePicker[onOk]` or `MonthPicker[onOk]`, instead of `onOK`!');
                 var calendar = React.createElement(TheCalendar, _extends({}, calendarHandler, { disabledDate: props.disabledDate, disabledTime: disabledTime, locale: locale.lang, timePicker: props.timePicker, defaultValue: props.defaultPickerValue || moment(), dateInputPlaceholder: placeholder, prefixCls: prefixCls, className: calendarClassName, onOk: props.onOk, format: props.format, showToday: props.showToday, monthCellContentRender: props.monthCellContentRender }));
-                                var pickerStyle = {};
+                // default width for showTime
+                var pickerStyle = {};
                 if (props.showTime) {
                     pickerStyle.width = props.style && props.style.width || 154;
                 }

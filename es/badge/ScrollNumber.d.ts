@@ -20,7 +20,7 @@ export default class ScrollNumber extends Component<ScrollNumberProps, any> {
     getPositionByNum(num: any, i: any): any;
     componentWillReceiveProps(nextProps: any): void;
     renderNumberList(position: any): React.ReactElement<any>[];
-    renderCurrentNumber(num: any, i: any): React.DOMElement<{
+    renderCurrentNumber(num: any, i: any): React.DetailedReactHTMLElement<{
         className: string;
         style: {
             transition: string;
@@ -29,7 +29,7 @@ export default class ScrollNumber extends Component<ScrollNumberProps, any> {
             transform: string;
         };
         key: any;
-    }, Element>;
+    }, HTMLElement>;
     renderNumberElement(): any;
     render(): React.DOMElement<any, Element>;
 }

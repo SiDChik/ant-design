@@ -32,8 +32,8 @@ export default class Spin extends React.Component<SpinProps, any> {
     wrapperClassName: PropTypes.string,
   };
 
-  debounceTimeout: number;
-  delayTimeout: number;
+  debounceTimeout: any;
+  delayTimeout: any;
 
   constructor(props) {
     super(props);

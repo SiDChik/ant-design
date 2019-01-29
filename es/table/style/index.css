@@ -244,9 +244,8 @@
   display: inline-block;
   font-size: 12px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.58333333) rotate(0deg);
-      -ms-transform: scale(0.58333333) rotate(0deg);
-          transform: scale(0.58333333) rotate(0deg);
+  -ms-transform: scale(0.58333333) rotate(0deg);
+      transform: scale(0.58333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -256,8 +255,7 @@
 }
 :root .ant-table-column-sorter .anticon-caret-up,
 :root .ant-table-column-sorter .anticon-caret-down {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-table-column-sorter .anticon-caret-up,
 :root .ant-table-column-sorter .anticon-caret-down {

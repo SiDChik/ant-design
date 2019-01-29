@@ -1,5 +1,5 @@
-import _extends from 'babel-runtime/helpers/extends';
 import _defineProperty from 'babel-runtime/helpers/defineProperty';
+import _extends from 'babel-runtime/helpers/extends';
 import _classCallCheck from 'babel-runtime/helpers/classCallCheck';
 import _createClass from 'babel-runtime/helpers/createClass';
 import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructorReturn';
@@ -148,7 +148,7 @@ var Sider = function (_React$Component) {
                 { className: prefixCls + '-trigger', onClick: this.toggle },
                 trigger || defaultTrigger
             ) : null;
-            var divStyle = Object.assign({}, style, { flex: '0 0 ' + siderWidth + 'px', width: siderWidth + 'px' });
+            var divStyle = _extends({}, style, { flex: '0 0 ' + siderWidth + 'px', width: siderWidth + 'px' });
             var siderCls = classNames(className, prefixCls, (_classNames = {}, _defineProperty(_classNames, prefixCls + '-collapsed', !!this.state.collapsed), _defineProperty(_classNames, prefixCls + '-has-trigger', !!trigger), _defineProperty(_classNames, prefixCls + '-below', !!this.state.below), _defineProperty(_classNames, prefixCls + '-zero-width', siderWidth === 0 || siderWidth === '0'), _classNames));
             return React.createElement(
                 'div',

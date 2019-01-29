@@ -10,9 +10,8 @@
   cursor: not-allowed;
 }
 .ant-rate-disabled .ant-rate-star:hover {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 .ant-rate-star {
   margin: 0;
@@ -33,9 +32,8 @@
   transition: all .3s;
 }
 .ant-rate-star:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
 }
 .ant-rate-star-first {
   position: absolute;

@@ -25,9 +25,8 @@
   display: inline-block;
   font-size: 12px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.75) rotate(0deg);
-      -ms-transform: scale(0.75) rotate(0deg);
-          transform: scale(0.75) rotate(0deg);
+  -ms-transform: scale(0.75) rotate(0deg);
+      transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -37,8 +36,7 @@
   font-family: "anticon" !important;
 }
 :root .ant-select-arrow {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-select-arrow {
   font-size: 12px;
@@ -48,9 +46,7 @@
 }
 .ant-select-arrow:before {
   content: '\e61d';
-  transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .ant-select-selection {
   outline: none;
@@ -333,9 +329,8 @@
   display: inline-block;
   font-size: 12px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.66666667) rotate(0deg);
-      -ms-transform: scale(0.66666667) rotate(0deg);
-          transform: scale(0.66666667) rotate(0deg);
+  -ms-transform: scale(0.66666667) rotate(0deg);
+      transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -348,8 +343,7 @@
   font-family: "anticon" !important;
 }
 :root .ant-select-selection--multiple .ant-select-selection__choice__remove {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-select-selection--multiple .ant-select-selection__choice__remove {
   font-size: 12px;
@@ -371,9 +365,8 @@
   -ms-transform: rotate(180deg);
 }
 .ant-select-open .ant-select-arrow:before {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
 }
 .ant-select-open .ant-select-selection {
   border-color: #49a9ee;
@@ -418,21 +411,17 @@
 }
 .ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-bottomLeft,
 .ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-bottomLeft {
-  -webkit-animation-name: antSlideUpIn;
-          animation-name: antSlideUpIn;
+  animation-name: antSlideUpIn;
 }
 .ant-select-dropdown.slide-up-enter.slide-up-enter-active.ant-select-dropdown-placement-topLeft,
 .ant-select-dropdown.slide-up-appear.slide-up-appear-active.ant-select-dropdown-placement-topLeft {
-  -webkit-animation-name: antSlideDownIn;
-          animation-name: antSlideDownIn;
+  animation-name: antSlideDownIn;
 }
 .ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-bottomLeft {
-  -webkit-animation-name: antSlideUpOut;
-          animation-name: antSlideUpOut;
+  animation-name: antSlideUpOut;
 }
 .ant-select-dropdown.slide-up-leave.slide-up-leave-active.ant-select-dropdown-placement-topLeft {
-  -webkit-animation-name: antSlideDownOut;
-          animation-name: antSlideDownOut;
+  animation-name: antSlideDownOut;
 }
 .ant-select-dropdown-hidden {
   display: none;
@@ -506,25 +495,22 @@
   display: inline-block;
   font-size: 12px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.83333333) rotate(0deg);
-      -ms-transform: scale(0.83333333) rotate(0deg);
-          transform: scale(0.83333333) rotate(0deg);
+  -ms-transform: scale(0.83333333) rotate(0deg);
+      transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
   transition: all 0.2s ease;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   right: 8px;
   font-weight: bold;
   text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
 }
 :root .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item:after {
   font-size: 12px;

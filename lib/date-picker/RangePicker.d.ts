@@ -9,6 +9,7 @@ export default class RangePicker extends React.Component<any, any> {
         prefixCls: string;
         allowClear: boolean;
         showToday: boolean;
+        disabled: boolean;
     };
     constructor(props: any);
     componentWillReceiveProps(nextProps: any): void;

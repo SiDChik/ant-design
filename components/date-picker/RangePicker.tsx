@@ -39,6 +39,7 @@ export default class RangePicker extends React.Component<any, any> {
     prefixCls: 'ant-calendar',
     allowClear: true,
     showToday: false,
+    disabled: false,
   };
 
   constructor(props) {
@@ -221,7 +222,7 @@ export default class RangePicker extends React.Component<any, any> {
       const start = inputValue[0];
       const end = inputValue[1];
       return (
-        <span className={props.pickerInputClass} disabled={props.disabled}>
+        <span className={props.pickerInputClass}>
           <input
             disabled={props.disabled}
             readOnly

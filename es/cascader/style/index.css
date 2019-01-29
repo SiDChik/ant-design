@@ -80,32 +80,27 @@
   display: inline-block;
   font-size: 12px;
   font-size: 9px \9;
-  -webkit-transform: scale(0.75) rotate(0deg);
-      -ms-transform: scale(0.75) rotate(0deg);
-          transform: scale(0.75) rotate(0deg);
+  -ms-transform: scale(0.75) rotate(0deg);
+      transform: scale(0.75) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
 }
 :root .ant-cascader-picker-arrow {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-cascader-picker-arrow {
   font-size: 12px;
 }
 .ant-cascader-picker-arrow:before {
-  transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
 }
 .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand:before {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
 }
 .ant-cascader-menus {
   font-size: 12px;
@@ -122,21 +117,17 @@
 }
 .ant-cascader-menus.slide-up-enter.slide-up-enter-active.ant-cascader-menus-placement-bottomLeft,
 .ant-cascader-menus.slide-up-appear.slide-up-appear-active.ant-cascader-menus-placement-bottomLeft {
-  -webkit-animation-name: antSlideUpIn;
-          animation-name: antSlideUpIn;
+  animation-name: antSlideUpIn;
 }
 .ant-cascader-menus.slide-up-enter.slide-up-enter-active.ant-cascader-menus-placement-topLeft,
 .ant-cascader-menus.slide-up-appear.slide-up-appear-active.ant-cascader-menus-placement-topLeft {
-  -webkit-animation-name: antSlideDownIn;
-          animation-name: antSlideDownIn;
+  animation-name: antSlideDownIn;
 }
 .ant-cascader-menus.slide-up-leave.slide-up-leave-active.ant-cascader-menus-placement-bottomLeft {
-  -webkit-animation-name: antSlideUpOut;
-          animation-name: antSlideUpOut;
+  animation-name: antSlideUpOut;
 }
 .ant-cascader-menus.slide-up-leave.slide-up-leave-active.ant-cascader-menus-placement-topLeft {
-  -webkit-animation-name: antSlideDownOut;
-          animation-name: antSlideDownOut;
+  animation-name: antSlideDownOut;
 }
 .ant-cascader-menu {
   display: inline-block;
@@ -193,9 +184,8 @@
   display: inline-block;
   font-size: 12px;
   font-size: 8px \9;
-  -webkit-transform: scale(0.66666667) rotate(0deg);
-      -ms-transform: scale(0.66666667) rotate(0deg);
-          transform: scale(0.66666667) rotate(0deg);
+  -ms-transform: scale(0.66666667) rotate(0deg);
+      transform: scale(0.66666667) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -204,8 +194,7 @@
   right: 8px;
 }
 :root .ant-cascader-menu-item-expand:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-cascader-menu-item-expand:after {
   font-size: 12px;
@@ -216,8 +205,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e64d";
-  -webkit-animation: loadingCircle 1s infinite linear;
-          animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
 }
 .ant-cascader-menu-item .ant-cascader-menu-item-keyword {
   color: #f04134;

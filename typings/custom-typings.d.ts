@@ -78,11 +78,7 @@ declare module 'rc-form*';
 
 declare module 'react-lazy-load';
 
-declare var process: {
-  env: {
-    NODE_ENV: string
-  }
-};
+declare var process: NodeJS.Process;
 
 declare module "*.json" {
   const value: any;

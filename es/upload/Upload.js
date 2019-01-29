@@ -1,5 +1,5 @@
-import _extends from 'babel-runtime/helpers/extends';
 import _defineProperty from 'babel-runtime/helpers/defineProperty';
+import _extends from 'babel-runtime/helpers/extends';
 import _classCallCheck from 'babel-runtime/helpers/classCallCheck';
 import _createClass from 'babel-runtime/helpers/createClass';
 import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructorReturn';
@@ -66,7 +66,7 @@ var Upload = function (_React$Component) {
             targetItem.status = 'done';
             targetItem.response = response;
             _this.onChange({
-                file: Object.assign({}, targetItem),
+                file: _extends({}, targetItem),
                 fileList: fileList
             });
         };
@@ -80,7 +80,7 @@ var Upload = function (_React$Component) {
             targetItem.percent = e.percent;
             _this.onChange({
                 event: e,
-                file: Object.assign({}, targetItem),
+                file: _extends({}, targetItem),
                 fileList: _this.state.fileList
             });
         };
@@ -96,7 +96,7 @@ var Upload = function (_React$Component) {
             targetItem.response = response;
             targetItem.status = 'error';
             _this.onChange({
-                file: Object.assign({}, targetItem),
+                file: _extends({}, targetItem),
                 fileList: fileList
             });
         };

@@ -125,9 +125,8 @@
   display: inline-block;
   font-size: 12px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.83333333) rotate(0deg);
-      -ms-transform: scale(0.83333333) rotate(0deg);
-          transform: scale(0.83333333) rotate(0deg);
+  -ms-transform: scale(0.83333333) rotate(0deg);
+      transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -141,8 +140,7 @@
   line-height: 24px;
 }
 :root .ant-upload-list-item .anticon-cross {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-upload-list-item .anticon-cross {
   font-size: 12px;
@@ -282,9 +280,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   z-index: 10;
   white-space: nowrap;
   opacity: 0;
@@ -344,34 +341,20 @@
 .ant-upload-list .ant-upload-animate-leave,
 .ant-upload-list .ant-upload-animate-inline-enter,
 .ant-upload-list .ant-upload-animate-inline-leave {
-  -webkit-animation-duration: .3s;
-          animation-duration: .3s;
-  -webkit-animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  animation-duration: .3s;
+  animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);
 }
 .ant-upload-list .ant-upload-animate-enter {
-  -webkit-animation-name: uploadAnimateIn;
-          animation-name: uploadAnimateIn;
+  animation-name: uploadAnimateIn;
 }
 .ant-upload-list .ant-upload-animate-leave {
-  -webkit-animation-name: uploadAnimateOut;
-          animation-name: uploadAnimateOut;
+  animation-name: uploadAnimateOut;
 }
 .ant-upload-list .ant-upload-animate-inline-enter {
-  -webkit-animation-name: uploadAnimateInlineIn;
-          animation-name: uploadAnimateInlineIn;
+  animation-name: uploadAnimateInlineIn;
 }
 .ant-upload-list .ant-upload-animate-inline-leave {
-  -webkit-animation-name: uploadAnimateInlineOut;
-          animation-name: uploadAnimateInlineOut;
-}
-@-webkit-keyframes uploadAnimateIn {
-  from {
-    height: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-  }
+  animation-name: uploadAnimateInlineOut;
 }
 @keyframes uploadAnimateIn {
   from {
@@ -379,14 +362,6 @@
     margin: 0;
     opacity: 0;
     padding: 0;
-  }
-}
-@-webkit-keyframes uploadAnimateOut {
-  to {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
   }
 }
 @keyframes uploadAnimateOut {
@@ -397,15 +372,6 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes uploadAnimateInlineIn {
-  from {
-    width: 0;
-    height: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-  }
-}
 @keyframes uploadAnimateInlineIn {
   from {
     width: 0;
@@ -413,15 +379,6 @@
     margin: 0;
     opacity: 0;
     padding: 0;
-  }
-}
-@-webkit-keyframes uploadAnimateInlineOut {
-  to {
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
   }
 }
 @keyframes uploadAnimateInlineOut {

@@ -1,5 +1,5 @@
-import _extends from 'babel-runtime/helpers/extends';
 import _defineProperty from 'babel-runtime/helpers/defineProperty';
+import _extends from 'babel-runtime/helpers/extends';
 import _classCallCheck from 'babel-runtime/helpers/classCallCheck';
 import _createClass from 'babel-runtime/helpers/createClass';
 import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructorReturn';
@@ -14,8 +14,8 @@ var __rest = this && this.__rest || function (s, e) {
 };
 import React from 'react';
 import RcSlider from 'rc-slider/es/Slider';
-import RcRange from 'rc-slider/lib/Range';
-import RcHandle from 'rc-slider/lib/Handle';
+import RcRange from 'rc-slider/es/Range';
+import RcHandle from 'rc-slider/es/Handle';
 import Tooltip from '../tooltip';
 
 var Slider = function (_React$Component) {
@@ -30,7 +30,7 @@ var Slider = function (_React$Component) {
             _this.setState(function (_ref) {
                 var visibles = _ref.visibles;
                 return {
-                    visibles: Object.assign({}, visibles, _defineProperty({}, index, visible))
+                    visibles: _extends({}, visibles, _defineProperty({}, index, visible))
                 };
             });
         };

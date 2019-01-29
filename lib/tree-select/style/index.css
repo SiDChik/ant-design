@@ -25,9 +25,8 @@
   transition: all .3s;
 }
 .ant-select-tree-checkbox-inner:after {
-  -webkit-transform: rotate(45deg) scale(0);
-      -ms-transform: rotate(45deg) scale(0);
-          transform: rotate(45deg) scale(0);
+  -ms-transform: rotate(45deg) scale(0);
+      transform: rotate(45deg) scale(0);
   position: absolute;
   left: 4px;
   top: 1px;
@@ -55,9 +54,8 @@
 }
 .ant-select-tree-checkbox-indeterminate .ant-select-tree-checkbox-inner:after {
   content: ' ';
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
   position: absolute;
   left: 2px;
   top: 5px;
@@ -65,9 +63,8 @@
   height: 1px;
 }
 .ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner:after {
-  -webkit-transform: rotate(45deg) scale(1);
-      -ms-transform: rotate(45deg) scale(1);
-          transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+      transform: rotate(45deg) scale(1);
   position: absolute;
   left: 4px;
   top: 1px;
@@ -89,8 +86,7 @@
   cursor: not-allowed;
 }
 .ant-select-tree-checkbox-disabled.ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner:after {
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
   border-color: rgba(0, 0, 0, 0.25);
 }
 .ant-select-tree-checkbox-disabled .ant-select-tree-checkbox-input {
@@ -101,8 +97,7 @@
   background-color: #f7f7f7;
 }
 .ant-select-tree-checkbox-disabled .ant-select-tree-checkbox-inner:after {
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
   border-color: #f7f7f7;
 }
 .ant-select-tree-checkbox-disabled + span {
@@ -205,8 +200,7 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\e64d";
   font-weight: bold;
-  -webkit-animation: loadingCircle 1s infinite linear;
-          animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
   margin-top: 8px;
 }
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-switcher-noop {
@@ -218,9 +212,8 @@
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-noline_open:after {
   font-size: 12px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.58333333) rotate(0deg);
-      -ms-transform: scale(0.58333333) rotate(0deg);
-          transform: scale(0.58333333) rotate(0deg);
+  -ms-transform: scale(0.58333333) rotate(0deg);
+      transform: scale(0.58333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -231,16 +224,13 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
   font-weight: bold;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-roots_open:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-center_open:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-bottom_open:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-noline_open:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-roots_open:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-center_open:after,
@@ -260,9 +250,8 @@
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-noline_close:after {
   font-size: 12px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.58333333) rotate(0deg);
-      -ms-transform: scale(0.58333333) rotate(0deg);
-          transform: scale(0.58333333) rotate(0deg);
+  -ms-transform: scale(0.58333333) rotate(0deg);
+      transform: scale(0.58333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -273,16 +262,13 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
   font-weight: bold;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-roots_close:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-center_close:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-bottom_close:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-noline_close:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-roots_close:after,
 :root .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-center_close:after,
@@ -294,9 +280,8 @@
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-center_close:after,
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-bottom_close:after,
 .ant-select-tree li > span.ant-select-tree-switcher.ant-select-tree-noline_close:after {
-  -webkit-transform: rotate(270deg) scale(0.59);
-      -ms-transform: rotate(270deg) scale(0.59);
-          transform: rotate(270deg) scale(0.59);
+  -ms-transform: rotate(270deg) scale(0.59);
+      transform: rotate(270deg) scale(0.59);
 }
 .ant-select-tree-child-tree {
   display: none;

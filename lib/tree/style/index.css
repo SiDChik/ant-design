@@ -25,9 +25,8 @@
   transition: all .3s;
 }
 .ant-tree-checkbox-inner:after {
-  -webkit-transform: rotate(45deg) scale(0);
-      -ms-transform: rotate(45deg) scale(0);
-          transform: rotate(45deg) scale(0);
+  -ms-transform: rotate(45deg) scale(0);
+      transform: rotate(45deg) scale(0);
   position: absolute;
   left: 4px;
   top: 1px;
@@ -55,9 +54,8 @@
 }
 .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
   content: ' ';
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
   position: absolute;
   left: 2px;
   top: 5px;
@@ -65,9 +63,8 @@
   height: 1px;
 }
 .ant-tree-checkbox-checked .ant-tree-checkbox-inner:after {
-  -webkit-transform: rotate(45deg) scale(1);
-      -ms-transform: rotate(45deg) scale(1);
-          transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+      transform: rotate(45deg) scale(1);
   position: absolute;
   left: 4px;
   top: 1px;
@@ -89,8 +86,7 @@
   cursor: not-allowed;
 }
 .ant-tree-checkbox-disabled.ant-tree-checkbox-checked .ant-tree-checkbox-inner:after {
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
   border-color: rgba(0, 0, 0, 0.25);
 }
 .ant-tree-checkbox-disabled .ant-tree-checkbox-input {
@@ -101,8 +97,7 @@
   background-color: #f7f7f7;
 }
 .ant-tree-checkbox-disabled .ant-tree-checkbox-inner:after {
-  -webkit-animation-name: none;
-          animation-name: none;
+  animation-name: none;
   border-color: #f7f7f7;
 }
 .ant-tree-checkbox-disabled + span {
@@ -230,8 +225,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e6ae";
-  -webkit-animation: loadingCircle 1s infinite linear;
-          animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
   color: #108ee9;
 }
 .ant-tree li span.ant-tree-switcher.ant-tree-switcher-noop {
@@ -243,9 +237,8 @@
 .ant-tree li span.ant-tree-switcher.ant-tree-noline_open:after {
   font-size: 12px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.58333333) rotate(0deg);
-      -ms-transform: scale(0.58333333) rotate(0deg);
-          transform: scale(0.58333333) rotate(0deg);
+  -ms-transform: scale(0.58333333) rotate(0deg);
+      transform: scale(0.58333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -256,16 +249,13 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
   font-weight: bold;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-tree li span.ant-tree-switcher.ant-tree-roots_open:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-center_open:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-bottom_open:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-noline_open:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-tree li span.ant-tree-switcher.ant-tree-roots_open:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-center_open:after,
@@ -285,9 +275,8 @@
 .ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after {
   font-size: 12px;
   font-size: 7px \9;
-  -webkit-transform: scale(0.58333333) rotate(0deg);
-      -ms-transform: scale(0.58333333) rotate(0deg);
-          transform: scale(0.58333333) rotate(0deg);
+  -ms-transform: scale(0.58333333) rotate(0deg);
+      transform: scale(0.58333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -298,16 +287,13 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
   font-weight: bold;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-tree li span.ant-tree-switcher.ant-tree-roots_close:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-center_close:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-bottom_close:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-tree li span.ant-tree-switcher.ant-tree-roots_close:after,
 :root .ant-tree li span.ant-tree-switcher.ant-tree-center_close:after,
@@ -319,9 +305,8 @@
 .ant-tree li span.ant-tree-switcher.ant-tree-center_close:after,
 .ant-tree li span.ant-tree-switcher.ant-tree-bottom_close:after,
 .ant-tree li span.ant-tree-switcher.ant-tree-noline_close:after {
-  -webkit-transform: rotate(270deg) scale(0.59);
-      -ms-transform: rotate(270deg) scale(0.59);
-          transform: rotate(270deg) scale(0.59);
+  -ms-transform: rotate(270deg) scale(0.59);
+      transform: rotate(270deg) scale(0.59);
 }
 .ant-tree li:last-child > span.ant-tree-switcher:before,
 .ant-tree li:last-child > span.ant-tree-iconEle:before {
@@ -367,9 +352,8 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
 .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher-noop:after {
   font-size: 12px;
   font-size: 12px \9;
-  -webkit-transform: scale(1) rotate(0deg);
-      -ms-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -381,13 +365,10 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
   content: "\e664";
   vertical-align: baseline;
   font-weight: normal;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher-noop:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-switcher-noop:after {
   font-size: 12px;
@@ -404,9 +385,8 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
 .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-noline_open:after {
   font-size: 12px;
   font-size: 12px \9;
-  -webkit-transform: scale(1) rotate(0deg);
-      -ms-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -418,16 +398,13 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
   content: "\e621";
   vertical-align: baseline;
   font-weight: normal;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-roots_open:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-center_open:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-bottom_open:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-noline_open:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-roots_open:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-center_open:after,
@@ -447,9 +424,8 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
 .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-noline_close:after {
   font-size: 12px;
   font-size: 12px \9;
-  -webkit-transform: scale(1) rotate(0deg);
-      -ms-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
@@ -461,16 +437,13 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
   content: "\e645";
   vertical-align: baseline;
   font-weight: normal;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-roots_close:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-center_close:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-bottom_close:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-noline_close:after {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-roots_close:after,
 :root .ant-tree.ant-tree-show-line li span.ant-tree-switcher.ant-tree-center_close:after,

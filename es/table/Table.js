@@ -387,6 +387,13 @@ var Table = function (_React$Component) {
                 if (sortState.sortColumn !== this.state.sortColumn || sortState.sortOrder !== this.state.sortOrder) {
                     this.setState(sortState);
                 }
+            } else {
+                if (!!this.state.sortColumn) {
+                    this.setState({
+                        sortColumn: null,
+                        sortOrder: ''
+                    });
+                }
             }
             var filteredValueColumns = this.getFilteredValueColumns(this.columns);
             if (filteredValueColumns.length > 0) {
@@ -703,7 +710,7 @@ var Table = function (_React$Component) {
     }, {
         key: 'prepareParamsArguments',
         value: function prepareParamsArguments(state) {
-            var pagination = Object.assign({}, state.pagination);
+            var pagination = _extends({}, state.pagination);
             // remove useless handle function in Table.onChange
             delete pagination.onChange;
             delete pagination.onShowSizeChange;

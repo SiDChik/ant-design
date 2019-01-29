@@ -23,8 +23,8 @@ export default class Spin extends React.Component<SpinProps, any> {
         size: any;
         wrapperClassName: any;
     };
-    debounceTimeout: number;
-    delayTimeout: number;
+    debounceTimeout: any;
+    delayTimeout: any;
     constructor(props: any);
     isNestedPattern(): boolean;
     componentDidMount(): void;

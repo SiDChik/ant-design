@@ -50,18 +50,8 @@
   height: 14px;
   border-radius: 2px;
   background: linear-gradient(90deg, rgba(207, 216, 220, 0.2), rgba(207, 216, 220, 0.4), rgba(207, 216, 220, 0.2));
-  -webkit-animation: card-loading 1.4s ease infinite;
-          animation: card-loading 1.4s ease infinite;
+  animation: card-loading 1.4s ease infinite;
   background-size: 600% 600%;
-}
-@-webkit-keyframes card-loading {
-  0%,
-  100% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 @keyframes card-loading {
   0%,

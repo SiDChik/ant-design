@@ -318,8 +318,7 @@ form .ant-cascader-picker:only-child {
   line-height: 32px;
   text-align: center;
   font-size: 14px;
-  -webkit-animation: zoomIn 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
-          animation: zoomIn 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  animation: zoomIn 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
   font-family: 'anticon';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -328,16 +327,13 @@ form .ant-cascader-picker:only-child {
   z-index: 1;
 }
 .has-success.has-feedback:after {
-  -webkit-animation-name: diffZoomIn1 !important;
-          animation-name: diffZoomIn1 !important;
+  animation-name: diffZoomIn1 !important;
 }
 .has-error.has-feedback:after {
-  -webkit-animation-name: diffZoomIn2 !important;
-          animation-name: diffZoomIn2 !important;
+  animation-name: diffZoomIn2 !important;
 }
 .has-warning.has-feedback:after {
-  -webkit-animation-name: diffZoomIn3 !important;
-          animation-name: diffZoomIn3 !important;
+  animation-name: diffZoomIn3 !important;
 }
 .has-success.has-feedback:after {
   content: '\e630';
@@ -489,8 +485,7 @@ form .ant-cascader-picker:only-child {
 }
 .is-validating.has-feedback:after {
   display: inline-block;
-  -webkit-animation: loadingCircle 1s infinite linear;
-          animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
   content: "\e64d";
   color: #108ee9;
 }
@@ -502,63 +497,27 @@ form .ant-cascader-picker:only-child {
 .ant-advanced-search-form .ant-input-group .ant-input-group-addon {
   height: 28px;
 }
-@-webkit-keyframes diffZoomIn1 {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 @keyframes diffZoomIn1 {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes diffZoomIn2 {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes diffZoomIn2 {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes diffZoomIn3 {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes diffZoomIn3 {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }

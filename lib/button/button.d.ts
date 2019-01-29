@@ -41,8 +41,8 @@ export default class Button extends React.Component<ButtonProps, any> {
         className: any;
         icon: any;
     };
-    timeout: number;
-    delayTimeout: number;
+    timeout: any;
+    delayTimeout: any;
     constructor(props: ButtonProps);
     componentWillReceiveProps(nextProps: ButtonProps): void;
     componentWillUnmount(): void;

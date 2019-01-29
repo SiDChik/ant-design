@@ -74,8 +74,7 @@ span.ant-transfer-list-search-action {
   overflow: auto;
 }
 .ant-transfer-list-content > .LazyLoad {
-  -webkit-animation: transferHighlightIn 1s;
-          animation: transferHighlightIn 1s;
+  animation: transferHighlightIn 1s;
 }
 .ant-transfer-list-content-item {
   overflow: hidden;
@@ -130,27 +129,17 @@ span.ant-transfer-list-search-action {
   display: inline-block;
   font-size: 12px;
   font-size: 10px \9;
-  -webkit-transform: scale(0.83333333) rotate(0deg);
-      -ms-transform: scale(0.83333333) rotate(0deg);
-          transform: scale(0.83333333) rotate(0deg);
+  -ms-transform: scale(0.83333333) rotate(0deg);
+      transform: scale(0.83333333) rotate(0deg);
   /* IE6-IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
   zoom: 1;
 }
 :root .ant-transfer-operation .ant-btn .anticon {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 :root .ant-transfer-operation .ant-btn .anticon {
   font-size: 12px;
-}
-@-webkit-keyframes transferHighlightIn {
-  0% {
-    background: #d2eafb;
-  }
-  100% {
-    background: transparent;
-  }
 }
 @keyframes transferHighlightIn {
   0% {

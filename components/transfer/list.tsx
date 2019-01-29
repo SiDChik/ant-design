@@ -51,8 +51,8 @@ export default class TransferList extends React.Component<TransferListProps, any
     lazy: {},
   };
 
-  timer: number;
-  triggerScrollTimer: number;
+  timer: any;
+  triggerScrollTimer: any;
 
   constructor(props) {
     super(props);
