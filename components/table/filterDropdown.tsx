@@ -14,7 +14,7 @@ export interface FilterMenuProps {
   selectedKeys: string[];
   column: {
     filterMultiple?: boolean,
-    filterDropdown?: React.ReactNode,
+    filterDropdown?: Function,
     filters?: { text: string; value: string, children?: any[] }[],
     filterDropdownVisible?: boolean,
     onFilterDropdownVisibleChange?: (visible: boolean) => any,
@@ -195,9 +195,17 @@ export default class FilterMenu extends React.Component<FilterMenuProps, any> {
     const dropdownMenuClass = classNames({
       [`${dropdownPrefixCls}-menu-without-submenu`]: !this.hasSubMenu(),
     });
-    const menus = column.filterDropdown ? (
+    const customFilter = column.filterDropdown && typeof column.filterDropdown === 'function'
+      ? column.filterDropdown({
+        handleChange: this.setSelectedKeys,
+        handleConfirm: this.handleConfirm,
+        handleClear: this.handleClearFilters,
+        selectedKeys: this.state.selectedKeys,
+      })
+      : null;
+    const menus = customFilter ? (
       <FilterDropdownMenuWrapper>
-        {column.filterDropdown}
+        {customFilter}
       </FilterDropdownMenuWrapper>
     ) : (
       <FilterDropdownMenuWrapper className={`${prefixCls}-dropdown`}>
